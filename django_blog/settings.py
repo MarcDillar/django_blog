@@ -154,6 +154,6 @@ AWS_SECRET_ACCESS_KEY = os.environ.get('DJANGO_BLOG_AWS_SECRET_ACCESS_KEY')
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
 django_heroku.settings(locals())
